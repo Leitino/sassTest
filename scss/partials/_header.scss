@@ -1,0 +1,37 @@
+$header_heigth:70px;
+
+header{
+  width: 100%;
+  height: $header_heigth;
+  background-color: $brand_primary;
+  .header_container{
+    width: 80%;
+    height: 100%;
+    margin:auto;
+    img{
+      width: 200px;
+      height: 100%;
+    }
+    .items{
+      display: inline-block;
+      line-height: $header_heigth;
+      .item{
+        transition: 0.7s;
+        float: left;
+        padding: $base_padding;
+        a{
+          text-decoration: none;
+          color: white;
+          transition: 1s;
+        }
+        &:hover{
+          background-color: black;
+          cursor: pointer;
+        }
+        &:hover a{
+          color:$brand_primary;
+        }
+      }
+    }
+  }
+}
